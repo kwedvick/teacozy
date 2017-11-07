@@ -54,6 +54,10 @@ a {
   color: white;
 }
 
+div {
+  border: 1px solid white;
+}
+
 .main-content {
   justify-content: center;
   align-items: center;
@@ -73,18 +77,56 @@ a {
   padding-top: 70px;
   flex-grow: 1;
   justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  flex-flow: column;
+  align-items: stretch;
 }
 
 h2 {
   background-color: black;
-  display: block;
+  padding: 10px;
+  margin: 0;
+  justify-content: center;
+}
+
+h4 {
+  background-color:black;
   padding: 10px;
   margin: 0;
 }
 
+#store-items {
+  display: flex;
+  width: 1000px;
+  padding-top: 50px;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu h2,
 h4 {
   display: block;
-  background-color:black;
+  width: 100%;
+}
+
+.menu {
+  flex: 0 0 200px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.menu img {
+  height: 200px;
+  width: 300px;
   padding: 10px;
-  margin: 0;
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+
+.menu span {
+  padding: 5px;
+  font-weight: bold;
 }
