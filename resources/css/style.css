@@ -6,3 +6,85 @@ body {
   opacity: 0.9;
   text-align: center;
 }
+
+header {
+  display: flex;
+  position: fixed;
+  height: 69px;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+  z-index: 1;
+  top: 0;
+}
+
+.logo {
+  display: flex;
+  color: white;
+  background-color: black;
+  padding-left: 10px;
+  flex-grow: 1;
+}
+
+header img {
+  height: 50px;
+  padding-left: 10px;
+  top: 0;
+  bottom: 0;
+}
+
+header nav {
+  display: inline-block;
+  text-align: right;
+  justify-content: flex-end;
+  background-color: black;
+  width: 100%;
+  padding-right: 10px;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: underline;
+  color: white;
+}
+
+.main-content {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.image.mission {
+  background: url('./img-mission-background.jpg');
+  height: 700px;
+  width: 1200px;
+  padding-top: 70px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+h2 {
+  background-color: black;
+  display: block;
+  padding: 10px;
+  margin: 0;
+}
+
+h4 {
+  display: block;
+  background-color:black;
+  padding: 10px;
+  margin: 0;
+}
