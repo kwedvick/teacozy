@@ -21,7 +21,6 @@ header {
 
 .logo {
   display: flex;
-  color: white;
   background-color: black;
   padding-left: 10px;
   flex-grow: 1;
@@ -30,23 +29,16 @@ header {
 header img {
   height: 50px;
   padding-left: 10px;
-  top: 0;
-  bottom: 0;
 }
 
-header nav {
-  display: inline-block;
+nav {
   text-align: right;
-  justify-content: flex-end;
-  background-color: black;
-  width: 100%;
   padding-right: 10px;
 }
 
 nav span {
   display: inline-block;
   padding: 20px 10px;
-  flex-grow: 1;
 }
 
 a {
@@ -55,12 +47,12 @@ a {
 }
 
 div {
-  border: 1px solid white;
+  display: block;
 }
 
-.main-content {
+.main {
+  display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -83,50 +75,70 @@ div {
   align-items: stretch;
 }
 
-h2 {
+.image.mission h2,
+h4 {
   background-color: black;
   padding: 10px;
   margin: 0;
   justify-content: center;
 }
 
-h4 {
-  background-color:black;
-  padding: 10px;
-  margin: 0;
-}
-
 #store-items {
   display: flex;
   width: 1000px;
-  padding-top: 50px;
-  margin: 0 auto;
+  height: 700px;
+  padding-top: 70px;
+  margin: auto;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.menu h2,
-h4 {
-  display: block;
-  width: 100%;
-}
-
 .menu {
-  flex: 0 0 200px;
-  justify-content: center;
-  margin: 0 auto;
+  padding: 5px;
 }
 
 .menu img {
   height: 200px;
   width: 300px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
   display: block;
 }
 
 .menu span {
-  padding: 5px;
+  display: block;
   font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+#locations {
+  background: url('./img-locations-background.jpg');
+  height: 500px;
+  width: 1200px;
+  padding-top: 70px;
+}
+
+h2, h3, h4 {
+  margin: 0px;
+  padding: 10px;
+}
+
+.address {
+  background-color: black;
+  flex-basis: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: 5px 20px;
+  opacity: 1;
+}
+
+#contact {
+  height: 200px;
+}
+
+footer {
+  display: flex;
+  align-items: left;
+  padding-left: 20px;
 }
